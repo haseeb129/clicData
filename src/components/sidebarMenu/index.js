@@ -11,7 +11,7 @@ const data = [
         link: "/becomeDataExpert",
         child: [],
       },
-      { title: "What is ClicData", link: "/clicData", child: [] },
+      { title: "What is ciPARTHENON", link: "/CIPARTHENON", child: [] },
     ],
   },
 
@@ -31,12 +31,30 @@ const data = [
         child: [
           {
             title: "Data properties",
-            link: "/comingsoon",
+            link: "/dataProperties",
             child: [],
           },
           {
             title: "Data Preview",
             link: "/comingsoon",
+            child: [],
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    title: "Accessing your Dashboards",
+    link: "/comingsoon",
+    child: [
+      {
+        title: "Organize your dashboards",
+        link: "/comingsoon",
+        child: [
+          {
+            title: "Dashboard Properties",
+            link: "/dashboardProperties",
             child: [],
           },
         ],

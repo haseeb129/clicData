@@ -6,8 +6,10 @@ import { Row, Col, Container } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import { GettingStarted } from "../pages/gettingStartedSection/gettingStarted";
 import { BecomeDataExpert } from "../pages/gettingStartedSection/becomeDataExpert";
-import { ClicData } from "../pages/gettingStartedSection/clicData";
+import { CIPARTHENON } from "../pages/gettingStartedSection/ciPARTHENON";
 import { ComingSoon } from "../pages/gettingStartedSection/comingSoon";
+import { DataProperties } from "../pages/preparingYourDataSection/dataProperties";
+import { DashboardProperties } from "../pages/accessingDashboardSection/dashboardProperties";
 
 import {
   AiOutlineTwitter,
@@ -51,9 +53,20 @@ export const Layout = (props) => {
               />
               <Route
                 exact
-                path="/clicData"
-                render={(props) => <ClicData {...props} />}
+                path="/CIPARTHENON"
+                render={(props) => <CIPARTHENON {...props} />}
               />
+              <Route
+                exact
+                path="/dataProperties"
+                render={(props) => <DataProperties {...props} />}
+              />
+              <Route
+                exact
+                path="/dashboardProperties"
+                render={(props) => <DashboardProperties {...props} />}
+              />
+
               <Route
                 exact
                 path="/comingsoon"

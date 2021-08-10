@@ -105,6 +105,10 @@ li::before {
 .bold-text {
   font-weight: bold;
 }
+
+.italic-text {
+  font-style: italic;
+}
 p span {
   font-size: 13px;
 }
