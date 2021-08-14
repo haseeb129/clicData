@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Sidebar from "../components/sidebarMenu";
+import React, { useState } from "react";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Sidebar from "./components/sidebarMenu";
 import { Row, Col, Container } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import { GettingStarted } from "../pages/gettingStartedSection/gettingStarted";
@@ -10,6 +10,12 @@ import { CIPARTHENON } from "../pages/gettingStartedSection/ciPARTHENON";
 import { ComingSoon } from "../pages/gettingStartedSection/comingSoon";
 import { DataProperties } from "../pages/preparingYourDataSection/dataProperties";
 import { DashboardProperties } from "../pages/accessingDashboardSection/dashboardProperties";
+import { ChartFunction } from "../pages/introductionToFormulasSection/chartFunction";
+import { DashboardBinders } from "../pages/buildingDashboardSection/dashboardBinders";
+import { AccessingDashboard } from "../pages/accessingDashboardSection";
+import { PreparingYourData } from "../pages/preparingYourDataSection";
+import { BuildingDashboard } from "../pages/buildingDashboardSection";
+import { IntroductionToFormulas } from "../pages/introductionToFormulasSection";
 
 import {
   AiOutlineTwitter,
@@ -23,7 +29,7 @@ export const Layout = (props) => {
       <Header style={{ height: "90px" }} />
 
       <Container fluid style={{ height: "100%" }}>
-        <Row style={{ height: "90vh" }}>
+        <Row style={{ height: "88vh" }}>
           <Col xs={5} md={5} lg={4} xl={4}>
             <Sidebar />
           </Col>
@@ -65,6 +71,39 @@ export const Layout = (props) => {
                 exact
                 path="/dashboardProperties"
                 render={(props) => <DashboardProperties {...props} />}
+              />
+
+              <Route
+                exact
+                path="/chartFunctions"
+                render={(props) => <ChartFunction {...props} />}
+              />
+
+              <Route
+                exact
+                path="/dashboardBinders"
+                render={(props) => <DashboardBinders {...props} />}
+              />
+              <Route
+                exact
+                path="/accessingDashboard"
+                render={(props) => <AccessingDashboard {...props} />}
+              />
+
+              <Route
+                exact
+                path="/preparingYourData"
+                render={(props) => <PreparingYourData {...props} />}
+              />
+              <Route
+                exact
+                path="/buildingDashboard"
+                render={(props) => <BuildingDashboard {...props} />}
+              />
+              <Route
+                exact
+                path="/introductionToFormulas"
+                render={(props) => <IntroductionToFormulas {...props} />}
               />
 
               <Route

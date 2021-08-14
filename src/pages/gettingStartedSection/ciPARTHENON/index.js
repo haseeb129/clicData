@@ -81,7 +81,7 @@ export const CIPARTHENON = () => {
         colleagues or clients in a few clicks.
         <br />
         <br />
-        <span className="bold-text">Happy Dashboarding!</span>
+        <div className="bold-text centerAllign">Happy Dashboarding!</div>
       </p>
     </div>
   );
