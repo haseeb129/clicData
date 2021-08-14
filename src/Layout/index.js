@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Sidebar from "./components/sidebarMenu";
+import { Redirect } from "react-router-dom";
 import { Row, Col, Container } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 import { GettingStarted } from "../pages/gettingStartedSection/gettingStarted";
@@ -44,7 +45,7 @@ export const Layout = (props) => {
               <Route
                 exact
                 path="/"
-                render={(props) => <GettingStarted {...props} />}
+                render={(props) => <Redirect to="/gettingStarted" />}
               />
 
               <Route

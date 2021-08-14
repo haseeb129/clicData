@@ -7,7 +7,8 @@ class App extends React.Component {
     super(props);
     const url = window.location.href;
     const arr = url.split("/");
-    if (arr[arr.length - 1] !== "") window.location.replace("/");
+    if (arr[arr.length - 1] !== "gettingStarted")
+      window.location.replace("/gettingStarted");
   }
   render() {
     return (
